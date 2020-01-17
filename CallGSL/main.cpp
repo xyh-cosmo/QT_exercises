@@ -12,7 +12,7 @@ int main()
     std::cout << " pi = " << pi << std::endl;
 
     double sum = 0;
-    for( int i=0; i<500; ++i ){
+    for( int i=0; i<5; ++i ){
         std::cout << "i = " << i << std::endl;
         sum += i;
     }

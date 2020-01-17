@@ -1,0 +1,3 @@
+/home/xyh/WorkSpace/Qt/CallGSL/CMakeFiles/rebuild_cache.dir
+/home/xyh/WorkSpace/Qt/CallGSL/CMakeFiles/CallGSL.dir
+/home/xyh/WorkSpace/Qt/CallGSL/CMakeFiles/edit_cache.dir
