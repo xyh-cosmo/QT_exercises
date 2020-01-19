@@ -1,3 +1,8 @@
+//该程序的目的是搞清楚“用整数给char/unsigned char变量赋值是否合法、意义是什么”。
+//经过测试之后确认，首先用整数给这些变量赋值是合法的；其次，在用printf输出结果时，
+//可以通过格式控制符输出不同的结果，可以是整数自身，也可以是这些整数在ascii表中所
+//对应的字符（当然，如果整数值超出ascii表的范围另说）。
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -7,40 +12,23 @@ using namespace std;
 int main()
 {
 
-//    unsigned char a[4]="";
-////    int a[4];
-//    a[0] = 0xfe;
-//    a[1] = 0xff;
-//    a[2] = 0x7f;
-//    a[3] = 0x00;
+    int length = 4;
+//    unsigned char *buffer = new unsigned char[length+1];
+    char *buffer = new char[length+1];
 
-//    for( int i=0; i<4; ++i ){
-//        cout << "a[" << i << "] = " << int(a[i]) << endl;
-//    }
+//    buffer[0] = 0xfe;
+//    buffer[1] = 0xff;
+//    buffer[2] = 0xff;
+//    buffer[3] = 0x7f;
 
-//    char32_t b = 12345555;
+    buffer[0] = 0x21;
+    buffer[1] = 0x22;
+    buffer[2] = 0x23;
+    buffer[3] = 0x24;
 
-//    cout << " b = " << b << endl;
-
-
-    char s = 'a';
-
-    printf("==> Before operation:\n");
-    printf("s   = %s\n",&s);
-    printf("s   = %d\n",s);
-
-
-    char s0 = s;
-    char ss = s0-26;
-    printf("==> After operation:\n");
-    printf("ss  = %s\n",&ss);
-    printf("ss  = %d\n",s-26);
-
-    printf("s   = %s\n",&s);
-    printf("s   = %s\n",&s);
-    printf("s   = %d\n",s);
-    cout << "s  = " << s << endl;
-    cout << "s  = " << int(s) << endl;
+    for( int i=0; i<4; ++i ){
+        printf("buffer[%2d] = %c\n", i, buffer[i]);
+    }
 
     return 0;
 }
