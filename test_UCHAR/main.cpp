@@ -27,7 +27,7 @@ int main()
     buffer[3] = 0x24;
 
     for( int i=0; i<4; ++i ){
-        printf("buffer[%2d] = %c\n", i, buffer[i]);
+        printf("buffer[%2d] = %c, int_value = %3d\n", i, buffer[i], buffer[i]);
     }
 
     return 0;
