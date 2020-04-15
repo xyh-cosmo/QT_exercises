@@ -9,15 +9,15 @@ int main()
 
     double pi = M_PI;
 
-    std::cout << " pi = " << pi << std::endl;
+    std::cout << ">\tpi = " << pi << std::endl;
 
     double sum = 0;
     for( int i=0; i<5; ++i ){
-        std::cout << "i = " << i << std::endl;
+        std::cout << ">\ti = " << i << std::endl;
         sum += i;
     }
 
-    std::cout << " sum = " << sum << std::endl;
+    std::cout << ">\tsum = " << sum << std::endl;
 
     return 0;
 }
